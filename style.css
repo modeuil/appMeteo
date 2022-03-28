@@ -1,0 +1,96 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin-top: 5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #f1f1f1;
+    background: linear-gradient(45deg, rgb(59,50,50), rgb(22,28,29));
+    height: 100vh;
+}
+
+
+.parent {
+    background: rgb(63,94,251);
+    background: linear-gradient(18deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+    width: 50%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px; 
+    grid-row-gap: 0px;
+    
+    }
+    
+    .navbar { 
+        padding: 2rem;
+        grid-area: 1 / 1 / 2 / 8; 
+        border-bottom: solid white 1px;
+    }
+    h1{
+
+        text-align: center;
+        
+    }
+    .meteo { 
+        grid-area: 2 / 1 / 4 / 8;
+        display: flex;
+    }
+
+    .desc{
+        margin-top: 2.2rem;
+        font-weight: bold;
+        text-align: center;
+        margin-right: 1rem;
+        text-transform: uppercase;
+        font-size: 1rem;
+    }
+
+    .location{
+        font-weight: bold;
+        text-align: center;
+        margin-right: 1rem;
+        text-transform: uppercase;
+        font-size: 1rem;
+    }
+    .meteo_child{
+        width: 50%;
+        border: 1px solid white;
+    }
+
+    .meteo_child img{
+        height: 14rem;
+        margin-left: 3rem;
+    }
+
+    .meteo_child .testing{
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 3rem;
+    }
+
+    .hours, .days{
+        border: solid white 1px;
+    }
+    .hour1 { 
+        grid-area: 4 / 1 / 5 / 2; }
+    .hour2 { grid-area: 4 / 2 / 5 / 3; }
+    .hour3 { grid-area: 4 / 3 / 5 / 4; }
+    .hour4 { grid-area: 4 / 4 / 5 / 5; }
+    .hour5 { grid-area: 4 / 5 / 5 / 6; }
+    .hour6 { grid-area: 4 / 6 / 5 / 7; }
+    .hour7 { grid-area: 4 / 7 / 5 / 8; }
+
+    .day1 { grid-area: 5 / 1 / 6 / 2; }
+    .day2 { grid-area: 5 / 2 / 6 / 3; }
+    .day3 { grid-area: 5 / 3 / 6 / 4; }
+    .day4 { grid-area: 5 / 4 / 6 / 5; }
+    .day5 { grid-area: 5 / 5 / 6 / 6; }
+    .day6 { grid-area: 5 / 6 / 6 / 7; }
+    .day7 { grid-area: 5 / 7 / 6 / 8; }
+    
